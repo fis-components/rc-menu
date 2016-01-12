@@ -79,7 +79,7 @@
   display: none;
   background-color: #fff;
 }
-.rc-menu-submenu-opened > .rc-menu {
+.rc-menu-submenu-open > .rc-menu {
   display: block;
 }
 .rc-menu .rc-menu-submenu-title .anticon,
