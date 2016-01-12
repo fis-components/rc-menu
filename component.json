@@ -10,5 +10,5 @@
         "object-assign": "3.x",
         "rc-util": "2.x"
     },
-    "version": "4.0.3"
+    "version": "4.1.0"
 }
