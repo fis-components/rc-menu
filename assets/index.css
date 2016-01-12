@@ -142,3 +142,196 @@
   padding-bottom: 8px;
   padding-right: 0;
 }
+.rc-menu-open-slide-up-enter {
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+  display: block !important;
+  opacity: 0;
+  -webkit-animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
+          animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.rc-menu-open-slide-up-leave {
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+  display: block !important;
+  opacity: 1;
+  -webkit-animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
+          animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.rc-menu-open-slide-up-enter.rc-menu-open-slide-up-enter-active {
+  -webkit-animation-name: rcMenuOpenSlideUpIn;
+          animation-name: rcMenuOpenSlideUpIn;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+.rc-menu-open-slide-up-leave.rc-menu-open-slide-up-leave-active {
+  -webkit-animation-name: rcMenuOpenSlideUpOut;
+          animation-name: rcMenuOpenSlideUpOut;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+@-webkit-keyframes rcMenuOpenSlideUpIn {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+@keyframes rcMenuOpenSlideUpIn {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+@-webkit-keyframes rcMenuOpenSlideUpOut {
+  0% {
+    opacity: 1;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}
+@keyframes rcMenuOpenSlideUpOut {
+  0% {
+    opacity: 1;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}
+.rc-menu-open-zoom-enter {
+  opacity: 0;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+  display: block !important;
+  -webkit-animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
+          animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.rc-menu-open-zoom-leave {
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+  display: block !important;
+  -webkit-animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
+          animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.rc-menu-open-zoom-enter.rc-menu-open-zoom-enter-active {
+  -webkit-animation-name: rcMenuOpenZoomIn;
+          animation-name: rcMenuOpenZoomIn;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+.rc-menu-open-zoom-leave.rc-menu-open-zoom-leave-active {
+  -webkit-animation-name: rcMenuOpenZoomOut;
+          animation-name: rcMenuOpenZoomOut;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+@-webkit-keyframes rcMenuOpenZoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@keyframes rcMenuOpenZoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes rcMenuOpenZoomOut {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+}
+@keyframes rcMenuOpenZoomOut {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+}
